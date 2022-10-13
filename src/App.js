@@ -2,10 +2,11 @@ import { Button, Form, FormLayout, Page, TextField } from '@shopify/polaris';
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import { mapToDispatch, mapToState } from './Action/map';
 import './App.css';
-import { useFetch } from './Fetch';
-import {mapToState,mapToDispatch} from './map'
-import Nav from './Nav';
+import Nav from './component/Nav';
+import { useFetch } from './customhooks/Fetch';
+
 
 function App(props) {
   const nav = useNavigate()

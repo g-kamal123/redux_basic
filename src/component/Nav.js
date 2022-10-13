@@ -9,7 +9,7 @@ import {
 import { ArrowLeftMinor, QuestionMarkMajor } from "@shopify/polaris-icons";
 import { useState, useCallback } from "react";
 import { connect } from "react-redux";
-import { mapToDispatch, mapToState } from "./map";
+import { mapToDispatch, mapToState } from "../Action/map";
 import { useNavigate } from "react-router-dom";
 
 const Nav = (props) => {
